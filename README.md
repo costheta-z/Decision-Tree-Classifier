@@ -18,8 +18,8 @@ Each node in the tree acts as a test case for some attribute, and each edge desc
 corresponds to one of the possible answers to the test case. This process is recursive and is repeated for
 every subtree rooted at the new nodes.
 ### What it does:
-$ 1. $ Trains the tree based on a randomly picked sub table of the iris dataset.
-$ 2. $ Given certain attributes then it would be able to classify the component possessing these attributes belongs to which class of the data set.
+1. Trains the tree based on a randomly picked sub table of the iris dataset.
+2. Given certain attributes then it would be able to classify the component possessing these attributes belongs to which class of the data set.
 ### Accuracy:
 The accuracy of correct classification depends on the purity of the data set that trained the tree. 
 Thus the point of splitting for 2 different classes determines how precise the classification would be.
@@ -45,12 +45,11 @@ records collected, the selections interpreted get higher and better.
 •	Decision tree splits the nodes on all available variables and then selects the split which results in most homogeneous sub-nodes.
 •	The decision of making strategic splits heavily affects a tree’s accuracy. The decision criteria are different for classification and regression trees.
 
-•	Variance:     $\frac{\sum_{i=1}^n (x_i-u)^2}{n}$     
-•	Entropy: Entropy is used to measure the impurity or randomness of a dataset. $-\sum_{i=1}^n (p_i*log<sub>2</sub>(p_i))$
+•	Variance:     $\frac{\sum_{i=1}^n (x_i-u)^2}{n}$
+•	Entropy: Entropy is used to measure the impurity or randomness of a dataset. $-\sum_{i=1}^n (p_i\times\log_2 (p_i))$
 •	Gini: It is the probability of correctly labeling a randomly chosen element if it was randomly labeled according to the distribution of labels in the node. 
 $\sum_{i=1}^n (p_i)^2$
-•	Information Gain:  Decision tree algorithm implementation uses information gain to decide which feature needs to be split in the next step.  Information Gain is used for splitting the nodes when the target variable is categorical. It works on the concept of the entropy
-$IG=1-Entropy$
+•	Information Gain:  Decision tree algorithm implementation uses information gain to decide which feature needs to be split in the next step.  Information Gain is used for splitting the nodes when the target variable is categorical. It works on the concept of the entropy $IG=1-Entropy$
 ### Entropy and IG formulae explained:
 A decision tree is built top-down from a root node and involves partitioning the data into subsets that contain instances with similar values (homogenous). This partitioning introduces certain new criteria and terms to be aware of that enable in determining the point of division. 
 
@@ -106,13 +105,13 @@ Gini Impurity is preferred over Information Gain because it does not contain log
 •	Too few examples to make an informative split. 
 ### Concurrency Control:
 Time complexity of main algorithm (decision_tree_algorithm)
-o Best Case: O($ M*N*log<sub>2</sub>(N) $)
-o Worst Case: O($ M*N^2 $)
+o Best Case: O($ M\times N\times log_2 (N)$)
+o Worst Case: O($M\times N^2$)
 Where M is number of features and N is the number of rows in Data
 For Best Case:
 If tree generated is balanced then the time complexity of tree will be O($ log<sub></sub>(N) $)
 So, the total time complexity of the algorithm with splitting included will be
-O($ M*N*log<sub>2</sub>(N) $)
+O($M\times N\times log_2 (N)$)
 For Worst Case:
-If tree generated is not balanced then the time complexity of the tree will be O($ N $)
-So, the total time Complexity of the algorithm with splitting included will be O($ M*N^2 $)
+If tree generated is not balanced then the time complexity of the tree will be O($N$)
+So, the total time Complexity of the algorithm with splitting included will be O($M\times N^2$)
