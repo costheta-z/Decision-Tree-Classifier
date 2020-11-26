@@ -64,7 +64,7 @@ o Best Case: O(<a href="https://www.codecogs.com/eqnedit.php?latex=M\times&space
 o Worst Case: O(<a href="https://www.codecogs.com/eqnedit.php?latex=M\times&space;N^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?M\times&space;N^2" title="M\times N^2" /></a>)
 Where M is number of features and N is the number of rows in Data
 For Best Case:
-If tree generated is balanced then the time complexity of tree will be O($log_2 (N)$)
+If tree generated is balanced then the time complexity of tree will be O(<a href="https://www.codecogs.com/eqnedit.php?latex=log_2&space;(N)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?log_2&space;(N)" title="log_2 (N)" /></a>)
 So, the total time complexity of the algorithm with splitting included will be O(<a href="https://www.codecogs.com/eqnedit.php?latex=M\times&space;N\times&space;log_2&space;(N)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?M\times&space;N\times&space;log_2&space;(N)" title="M\times N\times log_2 (N)" /></a>)
 For Worst Case:
 If tree generated is not balanced then the time complexity of the tree will be O(N)
